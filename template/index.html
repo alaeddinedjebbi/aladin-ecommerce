@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <title>Aladin</title>
+</head>
+
+<body>
+  <div class="grid-container">
+    <header class="header">
+      <div class="brand">
+        <button onclick="openMenu()">
+          &#9776;
+        </button>
+        <a href="index.html">Aladin</a>
+      </div>
+      <div class="header-links">
+        <a href="cart.html">Cart</a>
+        <a href="signin.html">Sign In</a>
+      </div>
+    </header>
+    <aside class="sidebar">
+      <h3>Shopping Categories</h3>
+      <button class="sidebar-close-button" onclick="closeMenu()">x</button>
+      <ul>
+        <li>
+          <a href="index.html">Juice</a>
+        </li>
+
+        <li>
+          <a href="index.html">Jam</a>
+        </li>
+
+      </ul>
+    </aside>
+    <main class="main">
+      <div class="content">
+        <ul class="products">
+          <li>
+            <div class="product">
+              <img class="product-image" src="./images/product-1.jpg" alt="product" />
+              <div class="product-name">
+                <a href="product.html">lemon juice</a>
+              </div>
+              <div class="product-brand">Juice</div>
+              <div class="product-price">12 TND</div>
+              <div class="product-rating">4.5 Stars (10 Reviews)</div>
+            </div>
+          </li>
+          <li>
+            <div class="product">
+              <img class="product-image" src="./images/product-2.jpg" alt="product" />
+              <div class="product-name">
+                <a href="product.html">Strawberry juice</a>
+              </div>
+              <div class="product-brand">Juice</div>
+              <div class="product-price">6 TND</div>
+              <div class="product-rating">4.5 Stars (10 Reviews)</div>
+            </div>
+          </li>
+          <li>
+            <div class="product">
+              <img class="product-image" src="./images/product-3.jpg" alt="product" />
+              <div class="product-name">
+                <a href="product.html">dried fig juice</a>
+              </div>
+              <div class="product-brand">Juice</div>
+              <div class="product-price">10 TND</div>
+              <div class="product-rating">4.5 Stars (10 Reviews)</div>
+            </div>
+          </li>
+          <li>
+            <div class="product">
+              <img class="product-image" src="./images/product-4.jpg" alt="product" />
+              <div class="product-name">
+                <a href="product.html">FIG jam</a>
+              </div>
+              <div class="product-brand">Jam</div>
+              <div class="product-price">5 TND</div>
+              <div class="product-rating">4.5 Stars (10 Reviews)</div>
+            </div>
+          </li>
+          <li>
+            <div class="product">
+              <img class="product-image" src="./images/product-5.jpg" alt="product" />
+              <div class="product-name">
+                <a href="product.html">From Quince jam</a>
+              </div>
+              <div class="product-brand">Jam</div>
+              <div class="product-price">3 TND</div>
+              <div class="product-rating">4.5 Stars (10 Reviews)</div>
+            </div>
+          </li>
+          <li>
+            <div class="product">
+              <img class="product-image" src="./images/product-6.jpg" alt="product" />
+              <div class="product-name">
+                <a href="product.html">Strawberry jam</a>
+              </div>
+              <div class="product-brand">Jam</div>
+              <div class="product-price">4 TND</div>
+              <div class="product-rating">4.5 Stars (10 Reviews)</div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+    </main>
+    <footer class="footer">
+      All Right Reserved-ALAEDDINE DJEBBI-GO MY CODE-PROJECT E.COMMERCE
+    </footer>
+  </div>
+  <script>
+    function openMenu() {
+      document.querySelector(".sidebar").classList.add("open");
+    }
+    function closeMenu() {
+      document.querySelector(".sidebar").classList.remove("open")
+    }
+  </script>
+</body>
+
+</html>
